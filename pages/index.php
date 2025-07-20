@@ -46,12 +46,19 @@
                 color: yellow;
             }
 
-            .carousel-item img {
-                border-radius: 50px;
+            .carousel-item img{
+                border-radius: 30px;
             }
 
             .text {
                 margin-top: 40px;
+            }
+
+            .text .card {
+                background-color: darkslateblue;
+                color: #fff;
+                border: 3px solid yellow;
+                border-radius: 30px;
             }
         </style>
         <div class="navbar">
@@ -60,7 +67,7 @@
                     <a class="nav-link" href="index.php">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PRODUCTS</a>
+                    <a class="nav-link" href="products.php">PRODUCTS</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">PROFILE</a>
@@ -88,9 +95,13 @@
         <div class="intro">
             <div class="text">
                 <div class="card">
+                    <div class="card-header">
+                        Esambo3 Honey
+                    </div>
                     <div class="card-body">
-                        <h4>Welcome TO Esambo3 Honey!</h4>
-                        <p>We bring you pure honey from the all-natural beehives of our farm</p>
+                        <h5 class="card-title">Honey Specialists</h5>
+                        <p class="card-text">With 10+ years experience in bee farming</p>
+                        <a href="products.php" class="btn btn-primary">Buy Honey</a>
                     </div>
                 </div>
             </div>
