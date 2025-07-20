@@ -62,7 +62,7 @@
                     <a class="nav-link" href="products.php">PRODUCTS</a>
                 </li>
                 <li class="nav-item">
-                    <a href="profile.php" class="nav-link">PROFILE</a>
+                    <a href="contact.php" class="nav-link">CONTACT</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">ABOUT</a>

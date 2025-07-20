@@ -10,27 +10,23 @@
 </head>
 
 <body>
-    <div class="home-page">
+    <div class="contact-page">
         <style>
             body {
                 background-color: goldenrod;
             }
 
-            .home-page {
+            .contact-page {
                 width: 100%;
                 height: 100%;
             }
 
-            .navbar,
-            .main,
-            .intro {
+            .navbar {
                 display: flex;
                 margin: 0 auto;
             }
 
-            .nav,
-            .carousel,
-            .text {
+            .nav {
                 float: right;
                 margin: 0 auto;
                 width: 50%;
@@ -44,21 +40,6 @@
 
             .nav-link:hover {
                 color: yellow;
-            }
-
-            .carousel-item img {
-                border-radius: 30px;
-            }
-
-            .text {
-                margin-top: 40px;
-            }
-
-            .text .card {
-                background-color: darkslateblue;
-                color: #fff;
-                border: 3px solid yellow;
-                border-radius: 30px;
             }
         </style>
         <div class="navbar">
@@ -76,35 +57,6 @@
                     <a class="nav-link" href="#">ABOUT</a>
                 </li>
             </ul>
-        </div>
-        <div class="main">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="Pure-Honey.webp" class="d-block w-100" alt="Pure Honey">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Honey.jpg" class="d-block w-100" alt="Pure Honey">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Honey3.jpg" class="d-block w-100" alt="Pure Honey">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="intro">
-            <div class="text">
-                <div class="card">
-                    <div class="card-header">
-                        Esambo3 Honey
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Honey Specialists</h5>
-                        <p class="card-text">With 10+ years experience in bee farming</p>
-                        <a href="products.php" class="btn btn-primary">Buy Honey</a>
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="footer">
             <style>
@@ -134,7 +86,9 @@
                 </div>
             </footer>
         </div>
+
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
