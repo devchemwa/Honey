@@ -46,7 +46,7 @@
                 color: yellow;
             }
 
-            .carousel-item img{
+            .carousel-item img {
                 border-radius: 30px;
             }
 
@@ -70,7 +70,7 @@
                     <a class="nav-link" href="products.php">PRODUCTS</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">PROFILE</a>
+                    <a href="profile.php" class="nav-link">PROFILE</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">ABOUT</a>
@@ -105,6 +105,34 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="footer">
+            <style>
+                .footer {
+                    display: flex;
+                    width: 100%;
+                    margin-top: 50px;
+                }
+
+                footer {
+                    float: right;
+                    margin: 0 auto;
+                    width: 50%;
+                }
+            </style>
+            <footer>
+                <div class="card text-center">
+                    <div class="card-header">
+                        ESAMBO3 HONEY
+                    </div>
+                    <div class="card-body">
+                        Quality, Affordable, Pure Honey
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                        2025
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
