@@ -80,13 +80,19 @@
                 <div class="mb-3">
                     <label for="Email" class="form-label">Email</label>
                     <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <?php
+                    if(!empty($email)){
+                    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+                        echo "<script>alert('Invalid Email format!');</script>";
+                    }}
+                    ?>
                 </div>
                 <div class="mb-3">
                     <label for="Message" class="form-label">Message</label>
                     <textarea class="form-control" id="message" rows="3"></textarea>
                 </div>
                 <div class="mb-3">
-                    <input type="submit" value="Send Message">
+                    <input type="submit" value="Send Message" id="submit">
                 </div>
             </form>
         </div>
@@ -130,3 +136,24 @@
 </body>
 
 </html>
+<?php
+$conn = mysqli_connect($server, $user, $pass, $database);
+if (!$conn) {
+    echo "<script>alert('Connection Error!');</script>";
+} else {
+    if (isset($_POST['submit'])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $sql = "insert into feedback(customerName,email,message) values('$name','$email','$message')";
+        $query = mysqli_query($conn, $sql);
+        if ($query) {
+            echo "<script>alert('Message Sent!');</script>";
+        } else {
+            echo "<script>alert('Message Not Sent!');</script>";
+        }
+    }
+}
+
+
+?>
