@@ -21,12 +21,12 @@
                 height: 100%;
             }
 
-            .navbar{
+            .navbar {
                 display: flex;
                 margin: 0 auto;
             }
 
-            .nav{
+            .nav {
                 float: right;
                 margin: 0 auto;
                 width: 50%;
@@ -54,35 +54,40 @@
                     <a href="contact.php" class="nav-link">CONTACT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT</a>
+                    <a class="nav-link" href="about.php">ABOUT</a>
                 </li>
             </ul>
         </div>
         <div class="contact-form">
             <style>
-                .contact-form{
+                .contact-form {
                     display: flex;
                     width: 100%;
                     margin: 0 auto;
                 }
-                form{
+
+                form {
                     float: right;
                     margin: 0 auto;
                     width: 50%;
                 }
             </style>
             <form action="contact.php" method="post">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Name</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="mb-3">
-                <input type="submit" value="Send Message">
-            </div>
+                <div class="mb-3">
+                    <label for="Name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="John Doe">
+                </div>
+                <div class="mb-3">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="Message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <input type="submit" value="Send Message">
+                </div>
             </form>
         </div>
         <div class="footer">

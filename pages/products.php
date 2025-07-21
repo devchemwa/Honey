@@ -65,7 +65,7 @@
                     <a href="contact.php" class="nav-link">CONTACT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT</a>
+                    <a class="nav-link" href="about.php">ABOUT</a>
                 </li>
             </ul>
         </div>
