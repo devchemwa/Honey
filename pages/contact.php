@@ -21,12 +21,12 @@
                 height: 100%;
             }
 
-            .navbar {
+            .navbar{
                 display: flex;
                 margin: 0 auto;
             }
 
-            .nav {
+            .nav{
                 float: right;
                 margin: 0 auto;
                 width: 50%;
@@ -58,12 +58,39 @@
                 </li>
             </ul>
         </div>
+        <div class="contact-form">
+            <style>
+                .contact-form{
+                    display: flex;
+                    width: 100%;
+                    margin: 0 auto;
+                }
+                form{
+                    float: right;
+                    margin: 0 auto;
+                    width: 50%;
+                }
+            </style>
+            <form action="contact.php" method="post">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <input type="submit" value="Send Message">
+            </div>
+            </form>
+        </div>
         <div class="footer">
             <style>
                 .footer {
                     display: flex;
                     width: 100%;
-                    margin-top: 50px;
+                    margin-top: 500px;
                 }
 
                 footer {
