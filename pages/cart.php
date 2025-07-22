@@ -1,3 +1,13 @@
+<?php
+class Cart 
+{
+    protected $paymentID;
+    protected $userName;
+    protected $amount;
+
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,13 +20,13 @@
 </head>
 
 <body>
-    <div class="about-page">
+    <div class="cart-page">
         <style>
             body {
                 background-color: goldenrod;
             }
 
-            .about-page {
+            .cart-page {
                 width: 100%;
                 height: 100%;
             }
@@ -41,6 +51,16 @@
             .nav-link:hover {
                 color: yellow;
             }
+
+            .col {
+                width: 18rem;
+                float: right;
+                margin: 0 auto;
+            }
+
+            .row {
+                margin-top: 40px;
+            }
         </style>
         <div class="navbar">
             <ul class="nav justify-content-center">
@@ -58,43 +78,10 @@
                 </li>
             </ul>
         </div>
-        <div class="about">
-            <style>
-                .about {
-                    width: 100%;
-                    margin: 0 auto;
-                }
+        <div class="cart-details">
 
-                .card {
-                    width: 50%;
-                    margin: 0 auto;
-                    margin-top: 40px;
-                }
-            </style>
-            <div class="card">
-                <div class="card-header">
-                    ABOUT
-                </div>
-                <div class="card-body">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet sequi vel dignissimos adipisci
-                        autem accusantium. Commodi omnis ad asperiores velit accusamus. Ipsa placeat harum, eos
-                        architecto dolor hic eveniet perspiciatis rerum quaerat expedita sint aspernatur vitae
-                        voluptatem, molestiae ullam debitis quasi neque saepe, enim ratione ut maxime et. Sit, beatae?
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    MORE FROM ESAMBO3 HONEY
-                </div>
-                <div class="card-body">
-                    <ul>
-                        <li>BLOG</li>     | <a href="#">ASALI CHRONICLES</a>
-                        <li>GALLERY</li>  | <a href="#">ESAMBO3 FARM GALLERY</a>
-                    </ul>
-                </div>
-            </div>
         </div>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

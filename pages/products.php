@@ -22,12 +22,12 @@
             }
 
             .navbar,
-            .main{
+            .main {
                 display: flex;
                 margin: 0 auto;
             }
 
-            .nav{
+            .nav {
                 float: right;
                 margin: 0 auto;
                 width: 50%;
@@ -76,11 +76,9 @@
                         <div class="card" style="width: 18rem;">
                             <img src="Pure-Honey.webp" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title <sup><span
-                                            class="badge text-bg-secondary">New</span></sup> </h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card’s content.
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">1kg Honey </h5>
+                                <p class="card-text">Ksh. 800 </p>
+                                <a href="#" class="btn btn-primary">Add To Cart</a>
                             </div>
                         </div>
                     </div>
@@ -88,10 +86,9 @@
                         <div class="card" style="width: 18rem;">
                             <img src="Pure-Honey.webp" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">500g Honey</h5>
+                                <p class="card-text">Ksh. 400</p>
+                                <a href="#" class="btn btn-primary">Add To Cart</a>
                             </div>
                         </div>
                     </div>
@@ -99,10 +96,9 @@
                         <div class="card" style="width: 18rem;">
                             <img src="Pure-Honey.webp" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">250g Honey</h5>
+                                <p class="card-text">Ksh. 200</p>
+                                <a href="#" class="btn btn-primary">Add To Cart</a>
                             </div>
                         </div>
                     </div>
@@ -111,12 +107,13 @@
         </div>
         <div class="footer">
             <style>
-                .footer{
+                .footer {
                     display: flex;
                     width: 100%;
-                    margin-top: 350px;
+                    margin-top: 400px;
                 }
-                footer{
+
+                footer {
                     float: right;
                     margin: 0 auto;
                     width: 50%;
@@ -148,3 +145,42 @@
 </body>
 
 </html>
+<?php
+include 'config.php';
+
+class User
+{
+    protected $userID;
+    protected $username;
+    protected $password;
+    protected $email;
+
+    public function __construct($userID, $username, $password, $email)
+    {
+        $this->userID = $userID;
+        $this->username = $username;
+        $this->password = $password;
+        $this->email = $email;
+    }
+}
+
+class Product
+{
+    protected $productID;
+    protected $productName;
+    protected $quantity;
+    protected $price;
+}
+
+
+$conn = mysqli_connect($server, $user, $pass, $db);
+if (!$conn) {
+    echo "<script>alert('Connection Failed!')</script>";
+} else {
+    $sql = "select * from products";
+    $query = mysqli_query($conn, $sql);
+    $products = mysqli_fetch_all($query);
+    print_r($products);
+}
+
+?>
