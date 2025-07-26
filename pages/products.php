@@ -52,6 +52,19 @@
             .row {
                 margin-top: 40px;
             }
+
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                transition: box-shadow 0.3s ease;
+            }
+
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            }
+
+            .glow:hover {
+                box-shadow: 0 0 20px 5px rgba(12, 226, 230, 0.7);
+            }
         </style>
         <div class="navbar">
             <ul class="nav justify-content-center">
@@ -73,7 +86,7 @@
             <div class="container text-center">
                 <div class="row row-cols-4">
                     <div class="col">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card glow" style="width: 18rem;">
                             <img src="Pure-Honey.webp" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">1kg Honey </h5>
@@ -83,21 +96,21 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card glow" style="width: 18rem;">
                             <img src="Pure-Honey.webp" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">500g Honey</h5>
-                                <p class="card-text">Ksh. 400</p>
+                                <p class="card-text">Ksh. 450</p>
                                 <a href="#" class="btn btn-primary">Add To Cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card glow" style="width: 18rem;">
                             <img src="Pure-Honey.webp" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">250g Honey</h5>
-                                <p class="card-text">Ksh. 200</p>
+                                <p class="card-text">Ksh. 250</p>
                                 <a href="#" class="btn btn-primary">Add To Cart</a>
                             </div>
                         </div>
